@@ -52,7 +52,7 @@ review_score, common_score = function.review_score_df()
 state, most_common_state = function.create_bystate_df()
 order_status, common_status = function.create_order_status()
 
-image_base64 = get_base64_image("logo.jpg")
+image_base64 = get_base64_image("./dashboard/logo.jpg")
 st.markdown(
     f"""
     <div style='text-align: center;'>
