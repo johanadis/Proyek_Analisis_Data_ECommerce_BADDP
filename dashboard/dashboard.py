@@ -1,4 +1,3 @@
-import os
 import urllib
 
 import matplotlib.image as mpimg
@@ -15,23 +14,13 @@ from func import DataAnalyzer, BrazilMapPlotter, get_base64_image
 # Load Main Dataset
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date",
                  "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-
-# Gunakan path absolut untuk menghindari FileNotFoundError
-file_path = os.path.join(os.getcwd(), "main_data.csv")
-if not os.path.exists(file_path):
-    st.error(f"File {file_path} tidak ditemukan. Pastikan file tersedia di direktori yang benar.")
-else:
-    main_df = pd.read_csv(file_path)
-    main_df.sort_values(by="order_approved_at", inplace=True)
-    main_df.reset_index(inplace=True)
+main_df = pd.read_csv("./main_data.csv")
+main_df.sort_values(by="order_approved_at", inplace=True)
+main_df.reset_index(inplace=True)
 
 # Load Geolocation Dataset
-geolocation_path = os.path.join(os.getcwd(), 'geolocation.csv')
-if not os.path.exists(geolocation_path):
-    st.error(f"File {geolocation_path} tidak ditemukan. Pastikan file tersedia di direktori yang benar.")
-else:
-    geolocation = pd.read_csv(geolocation_path)
-    data = geolocation.drop_duplicates(subset='customer_unique_id')
+geolocation = pd.read_csv('./geolocation.csv')
+data = geolocation.drop_duplicates(subset='customer_unique_id')
 
 for col in datetime_cols:
     main_df[col] = pd.to_datetime(main_df[col])
