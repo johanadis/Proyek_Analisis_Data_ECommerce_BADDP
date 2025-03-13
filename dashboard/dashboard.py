@@ -15,7 +15,7 @@ from func import DataAnalyzer, BrazilMapPlotter, get_base64_image
 # Load Main Dataset
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date",
                  "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-main_df = pd.read_csv("./main_data.csv")
+main_df = pd.read_csv("main_data.csv")
 main_df.sort_values(by="order_approved_at", inplace=True)
 main_df.reset_index(inplace=True)
 
