@@ -1,3 +1,4 @@
+import os
 import urllib
 
 import matplotlib.image as mpimg
