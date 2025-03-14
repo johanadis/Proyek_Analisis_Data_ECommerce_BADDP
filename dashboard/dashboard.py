@@ -117,7 +117,7 @@ sns.barplot(x="product_category_name_english", y="product_count",
             data=sum_order_items_df.head(5), hue="product_category_name_english",
             palette=colors_high, ax=ax[0], legend=False)
 
-ax[0].set_ylabel("Number of Sales", fontsize=45)
+ax[0].set_ylabel("Number of Sales", fontsize=35)
 ax[0].set_xlabel(None)
 ax[0].set_title("Produk dengan Penjualan Tertinggi", loc="center", fontsize=50)
 ax[0].tick_params(axis='y', labelsize=35)
