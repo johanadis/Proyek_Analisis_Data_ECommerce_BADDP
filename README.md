@@ -31,7 +31,7 @@ Berikut adalah struktur direktori:
 │       ├── 📄 func.cpython-312.pyc  
 │       ├── 📄 func.cpython-39.pyc  
 │  
-└── 📁 data e-commerce                                # Folder dataset mentah yang digunakan dalam analisis  
+└── 📁 dataset e-commerce                             # Folder dataset mentah yang digunakan dalam analisis  
     ├── 📄 customers_dataset.csv                      # Data pelanggan e-commerce  
     ├── 📄 geolocation_dataset.csv                    # Data geolokasi pelanggan dan penjual  
     ├── 📄 orders_dataset.csv                         # Informasi pesanan pelanggan  
