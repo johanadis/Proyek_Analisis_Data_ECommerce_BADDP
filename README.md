@@ -2,7 +2,7 @@
 
 ## 📊 **Project Data Analytics**  
  Proyek ini berfokus pada analisis *E-Commerce Public Dataset*. Dalam proyek ini, saya melakukan analisis mendalam terhadap data e-commerce dengan tujuan menemukan pola, tren, serta wawasan yang dapat dimanfaatkan untuk pengambilan keputusan berbasis data.  
-
+ 
 ## 📂 **Struktur Direktori**  
  
 Berikut adalah struktur direktori:
